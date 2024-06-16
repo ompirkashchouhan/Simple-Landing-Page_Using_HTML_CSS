@@ -1,0 +1,127 @@
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+h1{
+text-align: center;
+padding: 20px;
+}
+
+nav{
+width: 100%;
+background-color: gray;
+display: grid;
+padding: 15px;
+place-items: center;
+}
+
+
+nav ul{
+list-style-type: none;
+}
+
+nav ul a{
+display: inline-block;
+padding: 10px;
+text-decoration: none;
+color: white;
+transition: 0.2s ease-in;
+}
+
+nav ul a:hover{
+background-color: #d4cfcf;
+color: black;
+border-radius: 5px;
+}
+
+.section{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+padding: 30px 20px;
+grid-column-gap: 20px;
+grid-row-gap: 30px;
+}
+
+.div figure iframe{
+width: 100%;
+height: 300px;
+transition: 0.2s ease;
+}
+
+.div figure iframe:hover{
+transform: scale(1.04);
+}
+
+.div figure figurecaption h4{
+padding: 10px;
+text-align: center;
+}
+
+.div figure figurecaption button{
+padding: 5px 30px;
+border: none;
+outline: none;
+background-color: gray;
+cursor: pointer;
+border-radius: 4px;
+display: block;
+margin: 0 auto;
+}
+
+.div figure figurecaption button a{
+color: white;
+text-decoration: none;
+font-size: 15px;
+}
+
+@media screen and (max-width:1000px){
+.section{
+grid-template-columns: repeat(2, 1fr);
+} 
+}
+
+@media screen and (max-width:768px){
+.section{
+grid-template-columns: repeat(1, 1fr);
+} 
+}
+
+footer {
+padding: 15px;
+width: 100%;
+background-color: gray;
+color: white;
+font-size: 22px;
+position: absolute;
+place-items: center;
+}
+
+footer ul{
+list-style-type: none;
+}
+
+footer ul a li img{
+width: 35px;
+height: 35px;
+}
+
+footer ul a{
+display: inline-block;
+padding: 10px;
+text-decoration: none;
+transition: 0.2s ease-in;
+}
+
+footer ul a li:hover{
+padding: 3px;
+height: 35px;
+background-color: #d4cfcf;
+color: black;
+border-radius: 15px;
+}
+
+#li{
+margin-left: 12px;
+}
